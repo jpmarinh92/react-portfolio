@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "eurostile", sans-serif;
+}
+
+:root {
+  --primary-color: #7510F7;
+  --secondary-color: #ffffff;
+}
+
+.content {
+  height: 100vh;
+}
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+  background-color: var(--primary-color);
+  height: 150px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  height: 75px;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.navBar {
+  display:flex;
+  justify-content: space-evenly;
+  border-bottom: 3px;
+  margin-right: 20px ;
+}
+
+ul a {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  margin: 10px;
+  font-size: 20px;
+}
+
+.header ul:hover {
+  transform: scale(1.1);
+}
+
+ul a:link {
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  margin-top: 50px;
+  color: var(--primary-color);
+}
+
+.hero img {
+  width: 250px;
+  margin: 20px;
+  
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  /* background: linear-gradient(to right bottom, var(--primary-color) 0%, var(--secondary-color) 100%); */
+  color: var(--secondary-color);
+  height: 500px;
+  padding-top:50px;
+  /* clip-path: polygon(20% 0, 100% 0, 100% 40%, 80% 100%, 0 100%, 0 60%); */
+}
+
+.description{
+  text-align: justify;
+  width: 50%;
+  margin: 10px;
+}
+
+.my-work {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: 80%;
+  padding-top: 15px;
+}
+
+.skills div {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  height: 80%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills h3 {
+  margin: 10px;;
+}
+
+.skills div li {
+  margin: 10px 0;
+}
+
+.my-work h2 {
+  color: var(--primary-color);
+  padding: 10px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid var(--primary-color);
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.card:hover {
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+.card {
+  position: relative;
+}
+
+.card h4 {
+  display: inline-block;
+  position:absolute;
+  top: 70%;
+  left: 0%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px;
+  min-width: 250px;
+}
+
+.bottomLink{
+  margin-top: 45px;
+}
+
+.card img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  opacity: 75%;
+}
+
+.card img:hover{
+  opacity: 100%;
+}
+
+.main {
+  height: 500px;
+  max-width: 960px;
+  width: 100%;
+  margin: 10px 0 30px 0;
+}
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 150px ;
+}
+
+.resume li{
+  margin: 10px 0;
+}
+
+.container{
+  margin-left: 150px ;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  height: 80%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary-color);
+  padding: 5px 0 ;
+  background-color: var(--primary-color);
+  position:fixed;
+  bottom:0;
+  width: 100%;
+
+}
+.form-Input{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px ;
+  margin-top: 5px;
+}
+
+.form-button{
+  margin-left: 80px ;
+  margin-top: 5px;
+  height: 30px;
+}
+.contact {
+  display: flex;
+  
+}
+
+.item {
+  text-decoration: none;
+  color: var(--secondary-color);
+  border-bottom: solid 1px var(--secondary-color);
+  margin: 10px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  .skills div {
+    height: 85%;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  h1 {
+    padding-left: 10px;
+  }
+
+  .about-me {
+    height:700px;
+  }
+
+  .about-me p {
+    font-size: 20px;
+  }
+
+  .skills div {
+    width: 40%;
+    height: 95%;
+  }
+  
+  .main{
+    width: 300px;
+    height: 300px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  
+  .about-me p {
+    font-size: 20px;
+    width: 80%
+  }
+
+  .skills {
+    width: 95%;
+  }
+
+  .skills div {
+    width: 45;
+    height: 95%;
+  }
+
+  .main{
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+
+
