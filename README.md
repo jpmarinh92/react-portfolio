@@ -24,4 +24,4 @@
 
 ## Preview
 
-![Preview](/assets/images/portfolio.PNG)
+![Preview](src/assets/images/portfolio.PNG)
