@@ -3,14 +3,20 @@ import React, { useState } from "react";
 function Portfolio() {
   const mainProject = useState(
     {
-      name: 'carbnb',
-      repo: 'https://github.com/jpmarinh92/carbnb',
-      deploy: 'https://guarded-reaches-67644.herokuapp.com/',
+      name: 'talkie-box',
+      repo: 'https://github.com/wcastellan/talkie-box',
+      deploy: 'https://protected-forest-66303.herokuapp.com/',
       photo: 'main.PNG'
     }
   )
   
   const [projectsTop] = useState([
+    {
+      name: 'carbnb',
+      repo: 'https://github.com/jpmarinh92/carbnb',
+      deploy: 'https://guarded-reaches-67644.herokuapp.com/',
+      photo: 'carbnb.PNG'
+    },
     {
       name: 'LyricLover',
       repo: 'https://github.com/Osamadahnoun/LyricLover',
@@ -23,15 +29,15 @@ function Portfolio() {
       deploy: 'https://limitless-gorge-64250.herokuapp.com/',
       photo: 'deepthoughts.PNG'
     },
+  ])
+
+  const [projectsBottom] = useState([
     {
       name: 'Git It Done',
       repo: 'https://github.com/jpmarinh92/git-it-done',
       deploy: 'https://jpmarinh92.github.io/git-it-done/',
       photo: 'gitItDone.PNG'
-    }
-  ])
-
-  const [projectsBottom] = useState([
+    },
     {
       name: 'Budget Tracker',
       repo: 'https://github.com/jpmarinh92/budget-tracker-paw',
@@ -44,12 +50,6 @@ function Portfolio() {
       deploy: 'https://floating-journey-56402.herokuapp.com/',
       photo: 'techblog.PNG'
     },
-    {
-      name: 'Task Master Pro',
-      repo: 'https://github.com/jpmarinh92/taskmaster-pro',
-      deploy: 'https://jpmarinh92.github.io/taskmaster-pro/',
-      photo: 'taskmaster.PNG'
-    }
   ])
 
   return (
